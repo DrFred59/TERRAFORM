@@ -41,13 +41,12 @@ resource "snowflake_table" "TB_DEMO01" {
       name     = "id"
       type     = "integer"
       nullable = false
-    }
+  }
 
-  column
-    {
+  column {
       name     = "name"
       type     = "string"
       length   = 256
       nullable = false
-    }
+  }
 }
