@@ -37,16 +37,16 @@ resource "snowflake_table" "TB_DEMO01" {
   schema   = snowflake_schema.SCH_DEMO01.name
   name     = "TB_DEMO01"
 
-  column  {
-      name     = "id"
-      type     = "integer"
-      nullable = false
+  column {
+    name     = "id"
+    type     = "int"
+    nullable = true
   }
 
   column {
-      name     = "name"
-      type     = "string"
-      length   = 256
-      nullable = false
+    name     = "identity"
+    type     = "NUMBER(38,0)"
+    nullable = true
   }
+
 }
