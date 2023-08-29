@@ -37,19 +37,17 @@ resource "snowflake_table" "TB_DEMO01" {
   schema   = snowflake_schema.SCH_DEMO01.name
   name     = "TB_DEMO01"
 
-  columns = [
-    {
+  column  {
       name     = "id"
       type     = "integer"
       nullable = false
-    },
+    }
+
+  column
     {
       name     = "name"
       type     = "string"
       length   = 256
       nullable = false
     }
-  ]
-
-  primary_key = ["id"]
 }
