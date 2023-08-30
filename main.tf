@@ -46,4 +46,8 @@ resource "snowflake_table" "TB_DEMO01" {
     type     = "NUMBER(38,0)"
     nullable = true
   }
+  column {
+    name     = "name"
+    type     = "string"
+  }
 }
