@@ -42,6 +42,11 @@ resource "snowflake_table" "TB_DEMO01" {
     nullable = true
   }
   column {
+    name     = "ref"
+    type     = "text"
+    nullable = true
+  }
+  column {
     name     = "identity"
     type     = "NUMBER(38,0)"
     nullable = true
