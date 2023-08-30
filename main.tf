@@ -24,12 +24,12 @@ resource "snowflake_database" "demo_db" {
 }
 resource "snowflake_schema" "SCH_DEMO01" {
   database = snowflake_database.demo_db.name
-  name     = "SCH_DEMO01"
+  name     = "SCH_DM01"
   comment  = "Schema for Snowflake Terraform demo"
 }
 resource "snowflake_schema" "SCH_DEMO02" {
   database = snowflake_database.demo_db.name
-  name     = "SCH_DEMO02"
+  name     = "SCH_DM02"
   comment  = "Schema for Snowflake Terraform demo"
 }
 resource "snowflake_table" "TB_DEMO01" {
