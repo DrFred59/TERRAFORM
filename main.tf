@@ -48,6 +48,6 @@ resource "snowflake_table" "TB_DEMO01" {
   }
   column {
     name     = "name"
-    type     = "string"
+    type     = "text"
   }
 }
